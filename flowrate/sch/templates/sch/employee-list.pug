@@ -1,0 +1,24 @@
+extends base.pug
+
+block title 
+    "Employee List"
+
+block content
+    h1 Employee List for #{team.name}
+    table 
+        thead
+            tr
+                th Name
+                th Group
+                th FTE
+                th Hire Date
+        each employee in employees
+            tr
+                td #{employee.name}
+                    i.fa-user.fa-duotone
+                td= employee.group
+                td= employee.fte 
+                    |  FTE
+                td= employee.date_of_hire
+
+    

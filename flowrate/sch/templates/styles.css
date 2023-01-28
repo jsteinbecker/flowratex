@@ -1,0 +1,1783 @@
+body {
+background-color: #000000;
+color: #bbbbbb;
+min-height: 100%;
+}
+
+* {
+font-family: "Helvetica", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:ital,wght@0,300;0,700;1,100;1,800&family=Kreon:wght@300;400&display=swap');
+                
+* {
+    font-family: 'Raleway', sans-serif;
+    color: #ddd;
+    letter-spacing: 0px;
+    text-shadow: #1a202c66;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+html {
+    background-color: #0f172a!important;
+}
+
+input[type="submit"] {
+    border-radius: 8px;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+input[type="text"] {
+    background-color: #fff2;
+    color: #dddd;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 5px;
+}
+input[type="number"] {
+    background-color: #fff2;
+    color: #dddd;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 5px;
+}
+input[type="password"] {
+    background-color: #fff2;
+    color: #dddd;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 5px;
+}
+input[type="checkbox"][disabled] {
+    background-color: #2d3443;
+    border: 2px solid rgb(91, 89, 94);
+}
+
+select {
+    background: #888!important;
+    font-size: 18px;
+    color: #dddd;
+    border: none;
+    border-radius: 5px!important;
+    padding: 5px;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+    margin: 5px;
+    margin-left: 15px;
+    justify-content: center!important;
+}
+
+.compact > select {
+    padding-right: 2px!important;
+    padding-left: 2px!important;
+    font-size: 9px;
+}
+
+select[disabled] {
+    background-color: #001a1d!important;
+    border: 2px solid rgb(31, 31, 31);	
+    color: #484848aa!important;
+    padding-right: 8px!important;
+}
+.compact > select[disabled] {
+    color: #484848aa!important;
+    background-color: #001a1d!important;
+    font-size: 9px;
+    background-color: #001a1d!important;
+    padding-left: 2px!important;
+    padding-right: 2px!important;
+}
+select option {
+    background: #32362a!important;
+}
+
+.light-button:hover {
+    background-color: #ddd1;
+    color: #cdea;
+}
+.header-link {
+    color: #ddda;
+    text-decoration: none;
+    padding: 1px 10px 1px 10px;
+}
+.image {
+    height: 100%;
+}
+.aic {
+    align-items:center;
+}
+.header-link:hover {
+    color: #ddd;
+    background-color: #267a;
+    border-radius: 5px;
+}
+aside {
+    background-color: #333;
+    padding: 10px;
+    margin: 0px;
+    height: 100%;
+    width: 15%;
+}
+aside h1 {
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 30px;
+    color: #ddd;
+    background-color: #777;
+    text-align: center;
+    width: 100%;
+}
+.pharmer-gray {
+    font-family: 'Helvetica Neue';
+    font-weight: 200;
+    font-style: oblique;
+    letter-spacing: -0.1px;
+    color:rgba(146, 131, 202, 0.967);
+    background-color: #141d33;
+    border-radius: 3px;
+    padding-inline: 7px;
+}
+.tech-gray {
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    color: #141d33;
+    background-color: #828790;
+    border-radius: 5px;
+    padding-inline: 7px;
+
+}
+.jbm {
+    font-family: 'JetBrains Mono', monospace;
+}
+.grid-7-by-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 0px;
+    height: 100%;
+    width: 85%;
+}
+.emph {
+    color: #fff;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    background-color: #a5e2;
+    padding: 5px;
+    border-radius: 15px;
+}
+.small {
+    font-size: 10px;
+    font-style: italic;
+}
+.content {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #141d33;
+    border-radius: 15px;
+    border: 2px white solid;
+}
+.content-mobile {
+    margin-left : 7px;
+    margin-right: 7px;
+    padding-left: 7px;
+    padding-right:7px;
+    background-color: #141d33;
+    border-radius: 15px;
+    border: 2px #aed3e5 solid;
+}
+.table-xs :where(td,th) {
+    font-size: 68%!important;
+    line-height: 0.63!important;
+    padding: 0.4px;
+}
+.badge {
+    background-color: #bbb!important;
+    color: #000!important;
+    padding: 0 10px 0 10px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 3px;
+}
+.pointer {
+    cursor: pointer;
+}
+.hstack {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.vstack {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.w-fc {
+    width: fit-content;
+}
+.align-r {
+    align-items: flex-end;
+}
+.f-sb {
+    display: flex;
+    width: fit-content;
+    justify-content: space-between;
+    font-size: 10px;
+    font-weight: 800;
+}
+.flex-col-7 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.flex-col-7 > div {
+    flex: 3;
+}
+.flex-col-3 > div {
+    height: 20px;
+    width: fit-content;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    flex: 1;
+}
+div {
+    color: #f7fafc;
+}
+
+.badge-gray-lg {
+    background-color: #a0aec0;
+    color: #1a202c!important;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 5px;
+    border-radius: 15px;
+}
+.badge-gray-lg > span {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #1a202c!important;
+}
+.p1 {
+    padding: 1rem;
+    margin: 1rem;
+}
+.title {
+    font-size: 1.5rem;
+    color: #f6ad55;
+    font-weight: 900;
+    text-drop-shadow: 2px 2px 4px #f6ad5570;
+    font-family: "JetBrains Mono", monospace;
+}
+.subtitle {
+    font-size: 0.9rem;
+    color: #fec;
+    font-style: italic;
+    font-family: "JetBrains Mono", monospace;
+}
+h1 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2.5rem;
+    letter-spacing: 0px;
+    color: #f6ad55;
+    text-shadow: #f6ad5544;
+}
+h2 {
+    @apply text-2xl font-bold text-center text-gray-200;
+}
+h3 {
+    @apply text-xl font-bold text-center text-gray-200;
+}
+h4 {
+    @apply text-lg font-bold text-center text-gray-200;
+}
+h5 {
+    @apply text-base font-bold text-center text-gray-200;
+}
+p {
+    @apply text-base text-center text-gray-200;
+}
+.panel {
+    background-color: #aaa2;
+    border-radius: 10px;
+    border: 1px solid #ddd4;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.panel-red {
+    background-color: #f56565;
+    border-radius: 10px;
+    border: 1px solid #ddd4;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+a {
+    color: #fdd;
+}
+#context-menu {
+    position: fixed; 
+    z-index: 10000;
+    width: 150px;
+    background: #1blala; 
+    border-radius: 5px;
+    }
+#context-menu .item {
+    padding: 8px 10px; 
+    font-size: 15px; 
+    color: #eee;
+    cursor: pointer;
+    border-radius: inherit;
+    }
+
+#context-menu . item: hover {
+    background-color: #343434;
+}
+label {
+    @apply text-base text-center text-gray-200;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.activeDay {
+    border-radius: 5px;
+    color: #fff6;
+    background-color: #aaa1;
+    border: 1px solid #aaa1;
+}
+.inactiveDay {
+    border-radius: 5px;
+    color: #fff4;
+    border: 1px solid #fff0;
+}
+.activeDay:hover {
+    color: #2228;
+    background-color: #aaa9;
+
+}
+.inactiveDay:hover {
+    color: #fff4;
+    border: 1px solid #fff6;
+}
+.week-hstack {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1rem;
+}
+.submit {
+    @apply text-center text-gray-400 bg-pink-700 rounded-lg shadow-lg; 
+    padding: 0.5rem;
+}
+.submit:hover {
+    @apply text-gray-100 bg-pink-500; 
+
+}
+table {
+    border: 0px solid #fff2;
+    width: max-content;
+}
+td {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    margin-right: 1rem;
+    padding: 1px;
+    border: 0px;
+    text-align: left;
+    color: #fff7;
+    border-bottom: 0.75px solid #fff2 !important;
+    height: 0.8rem;
+}
+td > * {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+td > a {
+    color: rgb(255, 255, 255);
+    background-color: rgb(128, 98, 21);
+    text-decoration: none;
+    padding: 1.5px;
+    padding-right: 14px;
+    border-radius: 8px;
+    box-shadow: #1a202c9e 0px 4px 14px;
+}
+th > * {
+    font-family: 'JetBrains Mono', monospace;
+}
+th {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 800;
+    font-size: 0.9rem;
+    margin-right: 1rem;
+    padding: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    color: #fffd;
+    border-bottom: 1px solid #fff2 !important;
+    background-color: #aaa1;
+}
+
+.panel > ul > li  {
+    list-style-type: none;
+    font-size: 0.8rem;
+    color: #fff6;
+}
+.badge-pr {
+    background-color: #da67fd;
+    color: #fff;
+    font-weight: 800;
+    text-shadow: 1 1 1 #000!important;
+    border-radius: 20px;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+input {
+    color: #fff6;
+    font-weight: 900;
+    font-size: 0.9rem;
+    border-radius: 15px;
+    background-color: #fff2;
+    padding-left: 0.5rem; 
+    padding-right: 0.3rem;
+}
+.y-circle {
+    color: white;
+    background-color: #f6ad5560;
+    border: 1px solid #f6ad55;
+    font-weight: 800;
+    border-radius: 50%;
+    padding: 0.2rem;
+}
+.y-square {
+    color: white;
+    background-color: #f6ad5560;
+    border: 1px solid #f6ad55;
+    font-weight: 800;
+    border-radius: 5px;
+    padding: 0.2rem;
+    width: fit-content;
+}
+.g-panel {
+    background-color: #afb3;
+    border: 1px solid #afb9;
+}
+.b-panel {
+    background-color:#5af7;
+    border-color:#7bf;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.badge-pr {
+    background-color: #da67fd;
+    color: #fff;
+    font-weight: 800;
+    text-shadow: 1 1 1 #000 !important;
+    border-radius: 20px;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    }
+    
+    .nav-top {
+    background-color: #0b0b0b;
+    color: #fff;
+    border: 1px solid #fff2;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px #fff2;
+    }
+    .w-70 {
+    width: 70px;
+    }
+    .lg {
+    font-size: 20px!important;
+    font-weight: 100;
+    font-family: "Raleway", sans-serif;
+    font-style: italic;
+    float:right;
+    opacity: 75%;
+    margin: 0px;
+    }
+    .flt-lft {
+    float: left;
+    }
+    .h-50 {
+    height: 50px;
+    }
+    .sp-btw {
+    display: flex;
+    justify-content: space-between;
+    }
+    .giant-button {
+    background-color: #f6ad55;
+    color: #fff;
+    font-weight: 800;
+    text-shadow: 1 1 1 #000 !important;
+    border-radius: 7px;
+    font-size: 1.8rem;
+    font-family: 'JetBrains Mono', monospace;
+    text-decoration: none !important;
+    margin: 1rem;
+    width: 230px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    border: 2px solid #fff2;
+    }
+    .giant-button:hover {
+    background-color: #aaa;
+    border: 2px solid #f6ad5544;
+    color: #fff;
+    }
+    .giant-button:active {
+    background-color: #f6ad55cc;
+    }
+    .giant-button > a {
+    text-decoration: none;
+    }
+
+.badge-pr {
+    background-color: #da67fd;
+    color: #fff;
+    font-weight: 800;
+    text-shadow: 1 1 1 #000 !important;
+    border-radius: 20px;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    float: right;
+}
+.badge-pr :hover {
+    transform: scale(1.3);
+    transform: TranslateX(3px);
+    transform: TranslateY(3px);
+    transform: Rotate(15deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.red-glow {
+    color: #d77;
+    text-shadow: 0 0 10px rgba(59, 59, 59, 0.267) !important;
+    font-weight: 800;
+    font-style: italic;
+    text-shadow: 0 0 10px #fbb7 !important;
+}
+.green-glow {
+    color: #8fa;
+    text-shadow: 1 1 4 #fff4 !important;
+    font-weight: 800;
+    text-shadow: 0 0 5px #fff8;
+    animation: green-glow 1s ease-in-out infinite alternate;
+}
+.orange-glow {
+    color: rgb(239, 190, 121);
+    text-shadow: 1 1 4 #fff4 !important;
+    font-weight: 800;
+    text-shadow: 0 0 5px #fff8;
+    animation: orange-glow 1s ease-in-out infinite alternate;
+}
+.badge-green-lg {
+    background-color: #4a1;
+    color: #fff!important;
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-shadow: 1 1 1 #000 !important;
+    border-radius: 20px;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    float: right;
+}
+.badge-gray {
+    background-color: #333333;
+    color: #fff!important;
+    font-weight: 800;
+    font-size: 0.8rem;
+    text-shadow: 1 1 1 #000 !important;
+    border-radius: 20px;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    float: right;
+}
+.grid-7-col {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+}
+.grid-3-row {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
+}
+.grid-4-row {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+.grid-4-col {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+.active-tab {
+    background-color: #f6ad55;
+    color: #fff;
+    font-weight: 800;
+    text-shadow: 1 1 1 #000 !important;
+    border-radius: 4px;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.inactive-tab {
+    background-color: #333333;
+    color: #fff;
+    font-weight: 800;
+    text-shadow: 1 1 1 #000 !important;
+    border-radius: 4px;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.inactive-tab :hover {
+    background-color: #aaa;
+    color: #f6ad5590;
+}
+img {
+    @apply box-border block border-none;
+}
+.card {
+    background-color: #7bf3;
+}
+.loader {
+    border-top-color: #3498db;
+    -webkit-animation: spinner 1.5s linear infinite;
+    animation: spinner 1.5s linear infinite;
+}
+
+
+#schedule-body tr td:nth-child(7n+1) {
+border-right: 1px solid #444444;
+}     
+.pie {
+    border: 1px solid #ffffff;
+}
+.stl {
+    position: sticky;
+    left: 0
+    }
+.stt {
+    position: sticky;
+    top: 0
+}
+.tooltip-mono {
+    position: absolute;
+    z-index: 1000;
+    background-color: #ccc;
+    color: #333;
+    text-align: center;
+    padding: 3px 6px;
+    border-radius: 6px;
+    shadow: 1px 1px 1px #000;
+    font-family: 'JetBrains Mono', monospace;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 35px;
+}
+
+@-webkit-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    }
+    .scrolling-wrapper .card {
+    display: inline-block;
+    }
+    
+    .scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    }
+    .scrolling-wrapper-flexbox .card {
+    flex: 0 0 auto;
+    margin-right: 3px;
+    }
+    
+
+    
+    .scrolling-wrapper, .scrolling-wrapper-flexbox {
+    height: 580px;
+    margin-bottom: 20px;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    }
+    .scrolling-wrapper::-webkit-scrollbar, .scrolling-wrapper-flexbox::-webkit-scrollbar {
+    display: none;
+    }
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.yt-expander {
+    @apply relative block overflow-hidden text-2xl font-normal leading-8;
+    --primary-text-color: #212121;
+        --primary-background-color: #fff;
+        --secondary-text-color: #737373;
+        --disabled-text-color: #9b9b9b;
+        --divider-color: #dbdbdb;
+        --error-color: #dd2c00;
+        --primary-color: #3f51b5;
+        --light-primary-color: #c5cae9;
+        --dark-primary-color: #303f9f;
+        --accent-color: #ff4081;
+        --light-accent-color: #ff80ab;
+        --dark-accent-color: #f50057;
+        --light-theme-background-color: #fff;
+        --light-theme-base-color: #000;
+        --light-theme-text-color: #212121;
+        --light-theme-secondary-color: #737373;
+        --light-theme-disabled-color: #9b9b9b;
+        --light-theme-divider-color: #dbdbdb;
+        --dark-theme-background-color: #212121;
+        --dark-theme-base-color: #fff;
+        --dark-theme-text-color: #fff;
+        --dark-theme-secondary-color: #bcbcbc;
+        --dark-theme-disabled-color: #646464;
+        --dark-theme-divider-color: #3c3c3c;
+        --text-primary-color: #fff;
+        --default-primary-color: #3f51b5;
+        --yt-button-padding-minus-focus-outline: 8px 14px;
+        --yt-button-padding: 10px 16px;
+        --yt-button-padding-minus-border: 9px 15px;
+        --yt-live-chat-text-input-field-placeholder-color: rgba(255, 255, 255, 0.7);
+        --yt-live-chat-sponsor-color: #2ba640;
+        --yt-live-chat-moderator-color: #5e84f1;
+        --yt-live-chat-secondary-text-color: rgba(255, 255, 255, 0.7);
+        --yt-emoji-picker-category-background-color: rgba( 40, 40, 40, 0.8 );
+        --yt-emoji-picker-category-button-color: rgba(255, 255, 255, 0.54);
+        --paper-input-container-focus-color: #3ea6ff;
+        --yt-pdg-paid-stickers-margin-left: 38px;
+        --paper-spinner-color: #aaa;
+        --yt-live-chat-poll-choice-text-color: #fff;
+        --yt-live-chat-poll-choice-border: 1px solid   rgba(255, 255, 255, 0.3);
+        --yt-live-chat-poll-choice-min-height: 16px;
+        --yt-live-chat-poll-choice-text-padding: 0 16px;
+        --yt-live-chat-primary-text-color: #fff;
+        --yt-live-chat-tertiary-text-color: rgba(255, 255, 255, 0.54);
+        --yt-live-chat-deleted-message-color: rgba(255, 255, 255, 0.5);
+        --yt-live-chat-text-input-field-inactive-underline-color: #666;
+        --yt-pdg-paid-stickers-author-name-font-size: 14px;
+        --yt-pdg-paid-stickers-author-subtext-font-size: 13px;
+        --yt-button-margin: -0px;
+        --yt-button-border-radius: 2px;
+        --paper-listbox-background-color: #282828;
+        --yt-button-tooltip-z-index: 2300;
+        --yt-spec-icon-active-other: #fff;
+        --yt-icon-width: 40px;
+        --yt-icon-height: 40px;
+        --paper-input-container-invalid-color: #ff4e45;
+        --paper-input-container-input-color: #f1f1f1;
+        --yt-button-padding-minus-focus-outline-width: 2px;
+        --ytd-thumbnail-height: 118px;
+        --ytd-default-promo-panel-renderer-height: 600px;
+        --ytd-margin-base: 4px;
+        --ytd-margin-2x: 8px;
+        --yt-spec-call-to-action: #3ea6ff;
+        --yt-spec-icon-inactive: #fff;
+        --yt-spec-icon-disabled: #717171;
+        --yt-spec-brand-icon-active: #fff;
+        --yt-spec-brand-icon-inactive: #fff;
+        --yt-button-icon-button-text-color: #f1f1f1;
+        --yt-spec-base-background: #0f0f0f;
+        --yt-spec-raised-background: #212121;
+        --yt-spec-menu-background: #282828;
+        --yt-spec-inverted-background: #f1f1f1;
+        --yt-spec-additive-background: rgba(255, 255, 255, 0.1);
+        --yt-spec-outline: rgba(255, 255, 255, 0.2);
+        --yt-spec-shadow: rgba(0, 0, 0, 0.25);
+        --yt-spec-brand-background-solid: #212121;
+        --yt-spec-brand-background-primary: rgba(33, 33, 33, 0.98);
+        --yt-spec-brand-background-secondary: rgba(33, 33, 33, 0.95);
+        --yt-spec-general-background-a: #181818;
+        --yt-spec-general-background-b: #0f0f0f;
+        --yt-spec-general-background-c: #030303;
+        --yt-spec-error-background: #f9f9f9;
+        --yt-spec-text-primary: #f1f1f1;
+        --yt-spec-text-primary-inverse: #0f0f0f;
+        --yt-spec-text-secondary: #aaa;
+        --yt-spec-text-disabled: #717171;
+        --yt-spec-call-to-action-inverse: #065fd4;
+        --yt-spec-suggested-action: #263850;
+        --yt-spec-suggested-action-inverse: #def1ff;
+        --yt-spec-badge-chip-background: rgba(255, 255, 255, 0.1);
+        --yt-spec-verified-badge-background: rgba(255, 255, 255, 0.25);
+        --yt-spec-button-chip-background-hover: rgba(255, 255, 255, 0.2);
+        --yt-spec-touch-response: #fff;
+        --yt-spec-touch-response-inverse: #000;
+        --yt-spec-brand-button-background: #c00;
+        --yt-spec-brand-link-text: #ff4e45;
+        --yt-spec-wordmark-text: #fff;
+        --yt-spec-10-percent-layer: rgba(255, 255, 255, 0.1);
+        --yt-spec-snackbar-background: #030303;
+        --yt-spec-snackbar-background-updated: #f9f9f9;
+        --yt-spec-error-indicator: #ff8983;
+        --yt-spec-themed-blue: #3ea6ff;
+        --yt-spec-themed-green: #2ba640;
+        --yt-spec-ad-indicator: #00aaa7;
+        --yt-spec-themed-overlay-background: rgba(0, 0, 0, 0.8);
+        --yt-spec-commerce-badge-background: #002d08;
+        --yt-spec-static-brand-red: #f00;
+        --yt-spec-static-brand-white: #fff;
+        --yt-spec-static-brand-black: #212121;
+        --yt-spec-static-clear-color: rgba(255, 255, 255, 0);
+        --yt-spec-static-clear-black: rgba(0, 0, 0, 0);
+        --yt-spec-static-ad-yellow: #fbc02d;
+        --yt-spec-static-grey: #606060;
+        --yt-spec-static-overlay-background-solid: #000;
+        --yt-spec-static-overlay-background-heavy: rgba(0, 0, 0, 0.8);
+        --yt-spec-static-overlay-background-medium: rgba(0, 0, 0, 0.6);
+        --yt-spec-static-overlay-background-medium-light: rgba(0, 0, 0, 0.3);
+        --yt-spec-static-overlay-background-light: rgba(0, 0, 0, 0.1);
+        --yt-spec-static-overlay-text-primary: #fff;
+        --yt-spec-static-overlay-text-secondary: rgba(255, 255, 255, 0.7);
+        --yt-spec-static-overlay-text-disabled: rgba(255, 255, 255, 0.3);
+        --yt-spec-static-overlay-call-to-action: #3ea6ff;
+        --yt-spec-static-overlay-icon-active-other: #fff;
+        --yt-spec-static-overlay-icon-inactive: rgba(255, 255, 255, 0.7);
+        --yt-spec-static-overlay-icon-disabled: rgba(255, 255, 255, 0.3);
+        --yt-spec-static-overlay-button-secondary: rgba(255, 255, 255, 0.1);
+        --yt-spec-static-overlay-button-primary: rgba(255, 255, 255, 0.3);
+        --yt-spec-static-overlay-touch-response: #fff;
+        --yt-spec-static-overlay-touch-response-inverse: #000;
+        --yt-spec-static-overlay-background-brand: rgba(204, 0, 0, 0.9);
+        --yt-spec-assistive-feed-vibrant-gradient-1: #007a65;
+        --yt-spec-assistive-feed-vibrant-gradient-2: #7f0e7f;
+        --yt-spec-assistive-feed-vibrant-gradient-3: #ff8983;
+        --yt-spec-assistive-feed-themed-gradient-1: #005446;
+        --yt-spec-assistive-feed-themed-gradient-2: #39003f;
+        --yt-spec-assistive-feed-themed-gradient-3: #590000;
+        --yt-spec-call-to-action-faded: rgba(62, 166, 255, 0.3);
+        --yt-spec-call-to-action-hover: #6ebcff;
+        --yt-spec-brand-button-background-hover: #990412;
+        --yt-spec-brand-link-text-faded: rgba(255, 78, 69, 0.3);
+        --yt-spec-filled-button-focus-outline: rgba(255, 255, 255, 0.7);
+        --yt-spec-static-overlay-button-hover: rgba(255, 255, 255, 0.5);
+        --yt-spec-mono-filled-hover: #d9d9d9;
+        --yt-spec-commerce-filled-hover: #65b8ff;
+        --yt-spec-mono-tonal-hover: rgba(255, 255, 255, 0.2);
+        --yt-spec-commerce-tonal-hover: #515561;
+        --yt-spec-static-overlay-filled-hover: #e6e6e6;
+        --yt-spec-static-overlay-tonal-hover: rgba(255, 255, 255, 0.2);
+        --yt-spec-filled-button-text: #030303;
+        --yt-spec-paper-tab-ink: rgba(255, 255, 255, 0.3);
+        --yt-spec-selected-nav-text: #fff;
+        --paper-toggle-button-checked-bar-color: #717171;
+        --paper-toggle-button-checked-button-color: #3ea6ff;
+        --paper-toggle-button-unchecked-ink-color: #fff;
+        --paper-toggle-button-checked-ink-color: #3ea6ff;
+        --paper-checkbox-unchecked-color: #fff;
+        --paper-checkbox-label-color: #f1f1f1;
+        --paper-radio-button-unchecked-color: #fff;
+        --paper-radio-button-label-color: #f1f1f1;
+        --paper-radio-button-unchecked-ink-color: #fff;
+        --ytd-text-inline-expander-button-color: #f1f1f1;
+        --paper-radio-button-label-spacing: 16px;
+        --paper-listbox-color: #f1f1f1;
+        --ytd-watch-flexy-panel-max-height: 587px;
+        --ytd-watch-flexy-comments-panel-max-height: 587px;
+        --ytd-watch-flexy-structured-description-max-height: 587px;
+        --ytd-watch-flexy-sidebar-width: 402px;
+        --ytd-watch-flexy-sidebar-min-width: 300px;
+        --ytd-watch-flexy-masthead-height: 56px;
+        --ytd-watch-flexy-width-ratio: 1;
+        --ytd-watch-flexy-height-ratio: 0.5625;
+        --ytd-watch-flexy-space-below-player: 136px;
+        --ytd-watch-flexy-non-player-height: calc(  56px +  24px + 136px );
+        --ytd-watch-flexy-non-player-width: calc(  402px + (3 *  24px) );
+        --ytd-watch-flexy-min-player-height: 480px;
+        --ytd-watch-flexy-min-player-width: calc(  480px * (1 / 0.5625) );
+        --ytd-watch-flexy-max-player-height: calc( 100vh - (  56px +  24px + 136px ) );
+        --ytd-watch-flexy-max-player-width: calc( ( 100vh - (  56px +  24px + 136px ) ) * (1 / 0.5625) );
+        --yt-badge-letter-spacing: 0.35px;
+        --paper-checkbox-size: 20px;
+        --app-drawer-width: 240px;
+        --ytd-mini-guide-width: 72px;
+        --app-drawer-content-container-background-color: #0f0f0f;
+        --ytd-toolbar-offset: 56px;
+        --yt-spec-white-1: #fff;
+        --yt-spec-white-2: #f9f9f9;
+        --yt-spec-white-3: #f1f1f1;
+        --yt-spec-white-4: #e9e9e9;
+        --yt-spec-black-1: #282828;
+        --yt-spec-black-2: #1f1f1f;
+        --yt-spec-black-3: #161616;
+        --yt-spec-black-4: #0d0d0d;
+        --yt-spec-black-pure: #000;
+        --yt-spec-grey-1: #ccc;
+        --yt-spec-grey-2: #aaa;
+        --yt-spec-grey-3: #909090;
+        --yt-spec-grey-4: #717171;
+        --yt-spec-grey-5: #606060;
+        --yt-brand-youtube-red: #f00;
+        --yt-brand-medium-red: #c00;
+        --yt-brand-light-red: #ff4e45;
+        --yt-spec-red-30: #ff8983;
+        --yt-spec-red-70: #990412;
+        --yt-spec-pale-blue: #f2f8ff;
+        --yt-spec-light-blue: #3ea6ff;
+        --yt-spec-dark-blue: #065fd4;
+        --yt-spec-navy-blue: #252a3a;
+        --yt-spec-light-green: #2ba640;
+        --yt-spec-dark-green: #107516;
+        --yt-spec-yellow: #fbc02d;
+        --yt-spec-black-pure-alpha-5: rgba(0, 0, 0, 0.05);
+        --yt-spec-black-pure-alpha-10: rgba(0, 0, 0, 0.1);
+        --yt-spec-black-pure-alpha-15: rgba(0, 0, 0, 0.15);
+        --yt-spec-black-pure-alpha-30: rgba(0, 0, 0, 0.3);
+        --yt-spec-black-pure-alpha-60: rgba(0, 0, 0, 0.6);
+        --yt-spec-black-pure-alpha-80: rgba(0, 0, 0, 0.8);
+        --yt-spec-black-1-alpha-98: rgba(40, 40, 40, 0.98);
+        --yt-spec-black-1-alpha-95: rgba(40, 40, 40, 0.95);
+        --yt-spec-white-1-alpha-10: rgba(255, 255, 255, 0.1);
+        --yt-spec-white-1-alpha-20: rgba(255, 255, 255, 0.2);
+        --yt-spec-white-1-alpha-25: rgba(255, 255, 255, 0.25);
+        --yt-spec-white-1-alpha-30: rgba(255, 255, 255, 0.3);
+        --yt-spec-white-1-alpha-70: rgba(255, 255, 255, 0.7);
+        --yt-spec-white-1-alpha-95: rgba(255, 255, 255, 0.95);
+        --yt-spec-white-1-alpha-98: rgba(255, 255, 255, 0.98);
+        --yt-brand-medium-red-alpha-90: rgba(204, 0, 0, 0.9);
+        --yt-brand-medium-red-alpha-30: rgba(204, 0, 0, 0.3);
+        --yt-brand-light-red-alpha-30: rgba(255, 78, 69, 0.3);
+        --yt-spec-light-blue-alpha-30: rgba(62, 166, 255, 0.3);
+        --yt-spec-dark-blue-alpha-30: rgba(6, 95, 212, 0.3);
+        --yt-deprecated-luna-black: hsl(0, 0%, 6.7%);
+        --yt-deprecated-opalescence-grey: hsl(0, 0%, 53.3%);
+        --yt-deprecated-opalescence-soft-grey: hsl(0, 0%, 93.3%);
+        --yt-deprecated-blue: hsl(206.1, 79.3%, 52.7%);
+        --yt-deprecated-luna-black-opacity-lighten-1: hsla(0, 0%, 6.7%, 0.8);
+        --yt-deprecated-luna-black-opacity-lighten-2: hsla(0, 0%, 6.7%, 0.6);
+        --yt-deprecated-luna-black-opacity-lighten-3: hsla(0, 0%, 6.7%, 0.4);
+        --yt-deprecated-opalescence-soft-grey-opacity-lighten-3: hsla( 0, 0%, 93.3%, 0.4 );
+        --yt-deprecated-white-opacity-lighten-1: hsla(0, 0%, 100%, 0.8);
+        --yt-deprecated-white-opacity-lighten-2: hsla(0, 0%, 100%, 0.6);
+        --yt-deprecated-dark-surface-100: hsl(0, 0%, 7%);
+        --yt-deprecated-blue-light: hsl(205.9, 80%, 43.1%);
+        --yt-deprecated-opalescence-grey-opacity-lighten-3: hsla(0, 0%, 53.3%, 0.4);
+        --yt-deprecated-luna-black-opacity-lighten-4: hsla(0, 0%, 6.7%, 0.2);
+        --yt-opalescence-dark-grey: hsl(0, 0%, 20%);
+        --yt-deprecated-white-opacity-lighten-4: hsla(0, 0%, 100%, 0.2);
+        --yt-deprecated-opalescence-soft-grey-opacity-lighten-1: hsla( 0, 0%, 93.3%, 0.8 );
+        --yt-live-chat-background-color: #191919;
+        --yt-live-chat-secondary-background-color: #282828;
+        --yt-live-chat-action-panel-background-color: #282828;
+        --yt-live-chat-action-panel-background-color-transparent: rgba( 40, 40, 40, 0.8 );
+        --yt-live-chat-mode-change-background-color: #333;
+        --yt-live-chat-text-input-field-underline-transition-duration: 0.25s;
+        --yt-live-chat-icon-button-color: #fff;
+        --yt-live-chat-enabled-send-button-color: #fff;
+        --yt-live-chat-disabled-icon-button-color: rgba(255, 255, 255, 0.3);
+        --yt-live-chat-picker-button-color: rgba(255, 255, 255, 0.54);
+        --yt-live-chat-picker-button-active-color: #fff;
+        --yt-live-chat-picker-button-disabled-color: rgba(255, 255, 255, 0.3);
+        --yt-live-chat-picker-button-hover-color: rgba(255, 255, 255, 0.74);
+        --yt-live-chat-mention-background-color: #ff5722;
+        --yt-live-chat-mention-text-color: #fff;
+        --yt-live-chat-deleted-message-bar-color: rgba(255, 255, 255, 0.5);
+        --yt-live-chat-disabled-button-background-color: #444;
+        --yt-live-chat-disabled-button-text-color: rgba(255, 255, 255, 0.7);
+        --yt-live-chat-sub-panel-background-color: #3e3e3e;
+        --yt-live-chat-sub-panel-background-color-transparent: rgba(62, 62, 62, 0.7);
+        --yt-live-chat-header-background-color: #282828;
+        --yt-live-chat-header-button-color: rgba(255, 255, 255, 0.7);
+        --yt-live-chat-header-bottom-border: 1px solid  rgba(255, 255, 255, 0.1);
+        --yt-live-chat-count-color-early-warning: hsl(40, 76%, 55%);
+        --yt-live-chat-count-color-error: hsl(10, 51%, 49%);
+        --yt-live-chat-error-message-color: #ff4e45;
+        --yt-live-chat-reconnect-message-color: #fff;
+        --yt-live-chat-new-moderator-color: #3ea6ff;
+        --yt-live-chat-owner-color: #ffd600;
+        --yt-live-chat-author-chip-owner-background-color: #ffd600;
+        --yt-live-chat-author-chip-owner-text-color: hsl(0, 0%, 6.7%);
+        --yt-live-chat-author-chip-verified-background-color: #606060;
+        --yt-live-chat-author-chip-verified-text-color: #e9e9e9;
+        --yt-live-chat-message-highlight-background-color: #282828;
+        --yt-live-chat-overlay-color: rgba(0, 0, 0, 0.5);
+        --yt-live-chat-dialog-background-color: #424242;
+        --yt-live-chat-dialog-text-color: #fff;
+        --yt-live-chat-banner-border-color: rgba(255, 255, 255, 0.1);
+        --yt-live-chat-banner-animation-duration: 0.35s;
+        --yt-live-chat-banner-animation-fast-duration: 0.25s;
+        --yt-live-chat-banner-gradient-scrim: linear-gradient( rgba(40, 40, 40, 0.95), transparent );
+        --yt-live-chat-banner-indeterminate-bar-background: repeating-linear-gradient( 90deg, #fff, #fff 6px, #aaa 6px, #aaa 9px );
+        --yt-live-chat-banner-bar-animation-duration: 1s;
+        --yt-live-chat-action-panel-gradient-scrim: linear-gradient( to top, rgba(40, 40, 40, 0.95), transparent );
+        --yt-live-chat-call-for-questions-primary-text-color: #fff;
+        --yt-live-chat-call-for-questions-secondary-text-color: rgba(255, 255, 255, 0.7);
+        --yt-live-chat-call-for-questions-ask-question-button-color: #fff;
+        --yt-live-chat-call-to-action-primary-text-color: #fff;
+        --yt-live-chat-call-to-action-secondary-text-color: rgba(255, 255, 255, 0.7);
+        --yt-live-chat-call-to-action-ask-question-button-color: #fff;
+        --yt-live-chat-qna-primary-text-color: #fff;
+        --yt-live-chat-qna-start-panel-header-border-color: rgba(255, 255, 255, 0.1);
+        --yt-live-chat-qna-panel-start-button-background-color: #3ea6ff;
+        --yt-live-chat-qna-panel-start-button-color: #0f0f0f;
+        --yt-live-chat-qna-start-panel-button-background-color-disabled: rgba(255, 255, 255, 0.1);
+        --yt-live-chat-qna-panel-start-button-color-disabled: #717171;
+        --yt-live-chat-poll-primary-text-color: #fff;
+        --yt-live-chat-poll-secondary-text-color: rgba(255, 255, 255, 0.7);
+        --yt-live-chat-poll-tertiary-text-color: rgba(255, 255, 255, 0.3);
+        --yt-live-chat-poll-choice-background-color: transparent;
+        --yt-live-chat-poll-choice-border-radius: 2px;
+        --yt-live-chat-poll-choice-vote-bar-background-color: rgba(255, 255, 255, 0.1);
+        --yt-live-chat-poll-choice-hover-color: rgba(17, 17, 16, 0.1);
+        --yt-live-chat-poll-choice-animation-duration: 0.5s;
+        --yt-live-chat-poll-editor-panel-header-border-color: rgba(255, 255, 255, 0.1);
+        --yt-live-chat-poll-editor-start-button-color: #0f0f0f;
+        --yt-live-chat-poll-editor-start-button-background-color: #3ea6ff;
+        --yt-live-chat-poll-editor-start-button-color-disabled: #717171;
+        --yt-live-chat-poll-editor-start-button-background-color-disabled: #ccc;
+        --yt-live-interactivity-component-background-color: #264c8a;
+        --yt-live-chat-panel-animation-duration: 0.5s;
+        --yt-live-chat-universal-motion-curve: cubic-bezier(0.05, 0, 0, 1);
+        --yt-live-chat-moderation-mode-hover-background-color: rgba( 255, 255, 255, 0.3 );
+        --yt-live-chat-additional-inline-action-button-background-color: hsla( 0, 0%, 93.3%, 0.8 );
+        --yt-live-chat-additional-inline-action-button-background-color-hover: hsl(0, 0%, 93.3%);
+        --yt-formatted-string-emoji-size: 24px;
+        --yt-live-chat-emoji-size: 24px;
+        --yt-live-chat-text-input-field-suggestion-background-color: #3e3e3e;
+        --yt-live-chat-text-input-field-suggestion-background-color-hover: #343434;
+        --yt-live-chat-text-input-field-suggestion-text-color: #fff;
+        --yt-live-chat-text-input-field-suggestion-text-color-hover: #fff;
+        --yt-live-chat-ticker-arrow-background: #282828;
+        --yt-emoji-picker-category-color: rgba(255, 255, 255, 0.7);
+        --yt-emoji-picker-search-background-color: #444;
+        --yt-emoji-picker-search-color: #fff;
+        --yt-emoji-picker-search-placeholder-color: #999;
+        --yt-emoji-picker-base-with-variants-border: rgba(255, 255, 255, 0.25);
+        --yt-emoji-picker-variant-selector-bg-color: #2f2f2f;
+        --yt-live-chat-slider-active-color: #2196f3;
+        --yt-live-chat-slider-container-color: #515151;
+        --yt-live-chat-slider-markers-color: #fff;
+        --yt-live-chat-toast-action-color: #2196f3;
+        --yt-live-chat-toast-background-color: #323232;
+        --yt-live-chat-toast-text-color: #fff;
+        --yt-live-chat-automod-button-background-color: hsla(0, 0%, 53.3%, 0.4);
+        --yt-live-chat-automod-button-background-color-hover: rgba( 255, 255, 255, 0.5 );
+        --yt-live-chat-creator-support-button-border-radius: 2px;
+        --yt-live-chat-creator-support-button-padding: 10px 16px;
+        --yt-live-chat-countdown-opacity: 0.5;
+        --yt-live-chat-shimmer-background-color: rgba(17, 17, 17, 0.4);
+        --yt-live-chat-shimmer-linear-gradient: linear-gradient( 0deg, rgba(0, 0, 0, 0.1) 40%, rgba(100, 100, 100, 0.3) 50%, rgba(0, 0, 0, 0.1) 60% );
+        --yt-live-chat-vem-background-color: #3e3e3e;
+        --yt-live-chat-upsell-dialog-renderer-button-padding: 10px 16px;
+        --yt-live-chat-product-picker-icon-color: rgba(255, 255, 255, 0.5);
+        --yt-live-chat-product-picker-hover-color: rgba(68, 68, 68, 1);
+        --yt-live-chat-product-picker-disabled-icon-color: rgba(255, 255, 255, 0.3);
+        --yt-pdg-paid-stickers-tab-selection-bar-color: #3ea6ff;
+        --yt-live-chat-ninja-message-background-color: transparent;
+        --yt-live-chat-button-default-text-color: #fff;
+        --yt-live-chat-button-default-background-color: hsla(0, 0%, 100%, 0.2);
+        --yt-live-chat-button-dark-text-color: #fff;
+        --yt-live-chat-button-dark-background-color: hsla(0, 0%, 100%, 0.2);
+        --yt-live-chat-automod-button-explanation-color: rgba(255, 255, 255, 0.7);
+        --yt-button-with-icon-padding-minus-focus-outline: 4px 14px;
+        --ytd-grid-base: 103px;
+        --ytd-avatar-size: 32px;
+        --ytd-toolbar-height: 56px;
+        --ytd-margin-3x: 12px;
+        --ytd-margin-4x: 16px;
+        --ytd-margin-5x: 20px;
+        --ytd-margin-6x: 24px;
+        --ytd-margin-7x: 28px;
+        --ytd-margin-8x: 32px;
+        --ytd-margin-9x: 36px;
+        --ytd-margin-10x: 40px;
+        --ytd-margin-11x: 44px;
+        --ytd-margin-12x: 48px;
+        --ytd-margin-14x: 56px;
+        --ytd-margin-16x: 64px;
+        --ytd-margin-17x: 68px;
+        --ytd-margin-24x: 96px;
+        --ytd-margin-25x: 100px;
+        --ytd-margin-35x: 140px;
+        --ytd-neg-margin-base: -4px;
+        --ytd-neg-margin-2x: -8px;
+        --ytd-neg-margin-3x: -12px;
+        --ytd-neg-margin-4x: -16px;
+        --ytd-neg-margin-5x: -20px;
+        --ytd-neg-margin-6x: -24px;
+        --ytd-neg-margin-7x: -28px;
+        --ytd-neg-margin-8x: -32px;
+        --ytd-neg-margin-10x: -40px;
+        --ytd-neg-margin-11x: -44px;
+        --ytd-neg-margin-12x: -48px;
+        --ytd-neg-margin-14x: -56px;
+        --ytd-neg-margin-16x: -64px;
+        --ytd-neg-margin-24x: -96px;
+        --ytd-neg-margin-25x: -100px;
+        --yt-report-form-modal-renderer-min-width: 250px;
+        --yt-legal-report-details-form-renderer-min-width: 250px;
+        --yt-upsell-dialog-layout-vertical-width: 400px;
+        --yt-upsell-dialog-layout-horizontal-width: 800px;
+        --yt-subheadline-letter-spacing: 0.1px;
+        --yt-subheadline-link-letter-spacing: 0.15px;
+        --yt-link-letter-spacing: 0.25px;
+        --yt-thumbnail-attribution-letter-spacing: 0.3px;
+        --yt-user-comment-letter-spacing: 0.2px;
+        --yt-guide-highlight-letter-spacing: 0.25px;
+        --yt-caption-letter-spacing: 0.35px;
+        --yt-tab-system-letter-spacing: 0.5px;
+        --yt-channel-line-height: 3.2rem;
+        --yt-navbar-title-line-height: 2.6rem;
+        --yt-subheadline-line-height: 2.2rem;
+        --yt-link-line-height: 2rem;
+        --yt-thumbnail-attribution-font-size: 1.2rem;
+        --yt-thumbnail-attribution-line-height: 1.8rem;
+        --yt-user-comment-line-height: 2rem;
+        --yt-guide-highlight-line-height: 2rem;
+        --yt-caption-font-size: 1.2rem;
+        --yt-caption-line-height: 1.8rem;
+        --yt-navbar-title-font-size: 1.8rem;
+        --ytd-navbar-title-font-size: 1.8rem;
+        --ytd-navbar-title-font-weight: 400;
+        --ytd-navbar-title-line-height: 2.6rem;
+        --ytd-subheadline-font-size: 1.6rem;
+        --ytd-subheadline-font-weight: 400;
+        --ytd-subheadline-line-height: 2.2rem;
+        --ytd-subheadline-letter-spacing: 0.1px;
+        --ytd-link-font-size: 1.4rem;
+        --ytd-link-font-weight: 500;
+        --ytd-link-line-height: 2rem;
+        --ytd-link-letter-spacing: 0.25px;
+        --ytd-user-comment-font-size: 1.4rem;
+        --ytd-user-comment-font-weight: 400;
+        --ytd-user-comment-line-height: 2rem;
+        --ytd-user-comment-letter-spacing: 0.2px;
+        --ytd-tab-system-font-size: 1.4rem;
+        --ytd-tab-system-font-weight: 500;
+        --ytd-tab-system-letter-spacing: 0.5px;
+        --ytd-tab-system-text-transform: uppercase;
+        --ytd-caption-font-size: 1.2rem;
+        --ytd-caption-line-height: 1.8rem;
+        --ytd-caption-font-weight: 500;
+        --ytd-caption-letter-spacing: 0.35px;
+        --ytd-caption-text-transform: uppercase;
+        --ytd-mini-attribution-font-size: 1.2rem;
+        --ytd-mini-attribution-font-weight: 400;
+        --ytd-mini-attribution-line-height: 1.5rem;
+        --ytd-code-snippet-font-size: 1.4rem;
+        --ytd-code-snippet-line-height: 2.4rem;
+        --ytd-rich-grid-items-per-row: 4;
+        --ytd-rich-grid-posts-per-row: 3;
+        --ytd-rich-grid-slim-items-per-row: 6;
+        --ytd-rich-grid-game-cards-per-row: 6;
+        --ytd-rich-grid-item-margin: 16px;
+        --ytd-rich-grid-shorts-item-margin: 4px;
+        --ytd-rich-grid-item-min-width: 320px;
+        --ytd-rich-grid-item-max-width: 360px;
+        --ytd-rich-grid-mini-item-min-width: 240px;
+        --ytd-rich-grid-mini-item-max-width: 320px;
+        --ytd-rich-grid-slim-item-max-width: 220px;
+        --paper-dialog-background-color: #212121;
+        --paper-spinner-layer-1-color: #aaa;
+        --paper-spinner-layer-2-color: #aaa;
+        --paper-spinner-layer-3-color: #aaa;
+        --paper-spinner-layer-4-color: #aaa;
+        --paper-checkbox-unchecked-ink-color: #fff;
+        --paper-checkbox-checked-color: #3ea6ff;
+        --paper-checkbox-checked-ink-color: #3ea6ff;
+        --paper-checkbox-label-spacing: 16px;
+        --paper-checkbox-checkmark-color: #0f0f0f;
+        --paper-radio-button-checked-color: #3ea6ff;
+        --paper-radio-button-checked-ink-color: #3ea6ff;
+        --paper-radio-button-size: 20px;
+        --paper-toggle-button-unchecked-bar-color: #717171;
+        --paper-toggle-button-unchecked-button-color: #fff;
+        --paper-menu-disabled-color: #f1f1f1;
+        --paper-menu-background-color: #282828;
+        --paper-menu-color: #f1f1f1;
+        --ytd-searchbox-legacy-button-icon-color: #fff;
+        --ytd-searchbox-border-color: hsla(0, 0%, 53.3%, 0.4);
+        --ytd-searchbox-legacy-border-color: hsl(0, 0%, 18.82%);
+        --ytd-searchbox-legacy-border-shadow-color: hsla(0, 0%, 0%, 0);
+        --ytd-searchbox-legacy-button-color: hsla(0, 0%, 100%, 0.08);
+        --ytd-searchbox-legacy-button-border-color: hsl(0, 0%, 18.82%);
+        --ytd-searchbox-legacy-button-focus-color: hsla(0, 0%, 100%, 0.08);
+        --ytd-searchbox-legacy-button-hover-color: hsla(0, 0%, 100%, 0.08);
+        --ytd-searchbox-legacy-button-hover-border-color: hsl(0, 0%, 18.82%);
+        --ytd-searchbox-background: hsl(0, 0%, 7%);
+        --ytd-searchbox-text-color: hsla(0, 100%, 100%, 0.88);
+        --ytd-z-index-report-form-overlay: 100;
+        --ytd-z-index-engagement-panel-scrim: 600;
+        --ytd-z-index-engagement-panel-scrimmed: 601;
+        --ytd-z-index-toggle-button-tooltip: 2300;
+        --ytd-z-index-miniplayer-bar: 2008;
+        --ytd-z-index-masthead: 2020;
+        --ytd-z-index-user-mention-suggestions-container: 2022;
+        --ytd-z-index-notification: 2024;
+        --ytd-z-index-miniplayer: 2018;
+        --ytd-z-index-channel-name: 300;
+        --ytd-grid-1-columns-width: 214px;
+        --ytd-grid-2-columns-width: 428px;
+        --ytd-grid-3-columns-width: 642px;
+        --ytd-grid-4-columns-width: 856px;
+        --ytd-grid-5-columns-width: 1070px;
+        --ytd-grid-6-columns-width: 1284px;
+        --ytd-grid-max-width: 1284px;
+        --ytd-scrollbar-width: 8px;
+        --paper-tooltip-delay-in: 1ms;
+        --paper-tooltip-delay-out: -0px;
+        --paper-tooltip-duration-in: 150ms;
+        --paper-tooltip-duration-out: 75ms;
+        --iron-overlay-backdrop-opacity: 0.3;
+        --paper-tab-content-focused-font-weight: 500;
+        --yt-subscription-product-grid-margin: 24px;
+        --yt-subscription-product-grid-margin-two-thirds: 16px;
+        --yt-subscription-product-grid-margin-half: 12px;
+        --yt-subscription-product-grid-margin-one-third: 8px;
+        --yt-swatch-icon-color: hsla(0, 0%, 6.7%, 0.4);
+        --yt-swatch-primary: #fff;
+        --yt-swatch-primary-darker: rgb(230, 230, 230);
+        --yt-swatch-text: hsla(0, 0%, 6.7%, 0.4);
+        --yt-swatch-input-text: hsl(0, 0%, 6.7%);
+        --yt-swatch-tab-selected-text: rgb(15, 15, 15);
+        --yt-swatch-textbox-bg: rgb(255, 255, 255);
+        contain: content;
+        color: rgba(241,241,241,1);
+        font-family: Roboto, Arial, sans-serif;
+    }
+        /* --color-canvas-default-transparent: rgba(13,17,23,0);
+        --color-page-header-bg: #0d1117;
+        --color-marketing-icon-primary: #79c0ff;
+        --color-marketing-icon-secondary: #1f6feb;
+        --color-diff-blob-addition-num-text: #c9d1d9;
+        --color-diff-blob-addition-fg: #c9d1d9;
+        --color-diff-blob-addition-num-bg: rgba(63,185,80,0.3);
+        --color-diff-blob-addition-line-bg: rgba(46,160,67,0.15);
+        --color-diff-blob-addition-word-bg: rgba(46,160,67,0.4);
+        --color-diff-blob-deletion-num-text: #c9d1d9;
+        --color-diff-blob-deletion-fg: #c9d1d9;
+        --color-diff-blob-deletion-num-bg: rgba(248,81,73,0.3);
+        --color-diff-blob-deletion-line-bg: rgba(248,81,73,0.15);
+        --color-diff-blob-deletion-word-bg: rgba(248,81,73,0.4);
+        --color-diff-blob-hunk-num-bg: rgba(56,139,253,0.4);
+        --color-diff-blob-expander-icon: #8b949e;
+        --color-diff-blob-selected-line-highlight-mix-blend-mode: screen;
+        --color-diffstat-deletion-border: rgba(240,246,252,0.1);
+        --color-diffstat-addition-border: rgba(240,246,252,0.1);
+        --color-diffstat-addition-bg: #3fb950;
+        --color-search-keyword-hl: rgba(210,153,34,0.4);
+        --color-prettylights-syntax-comment: #8b949e;
+        --color-prettylights-syntax-constant: #79c0ff;
+        --color-prettylights-syntax-entity: #d2a8ff;
+        --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+        --color-prettylights-syntax-entity-tag: #7ee787;
+        --color-prettylights-syntax-keyword: #ff7b72;
+        --color-prettylights-syntax-string: #a5d6ff;
+        --color-prettylights-syntax-variable: #ffa657;
+        --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+        --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+        --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+        --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+        --color-prettylights-syntax-carriage-return-bg: #b62324;
+        --color-prettylights-syntax-string-regexp: #7ee787;
+        --color-prettylights-syntax-markup-list: #f2cc60;
+        --color-prettylights-syntax-markup-heading: #1f6feb;
+        --color-prettylights-syntax-markup-italic: #c9d1d9;
+        --color-prettylights-syntax-markup-bold: #c9d1d9;
+        --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+        --color-prettylights-syntax-markup-deleted-bg: #67060c;
+        --color-prettylights-syntax-markup-inserted-text: #aff5b4;
+        --color-prettylights-syntax-markup-inserted-bg: #033a16;
+        --color-prettylights-syntax-markup-changed-text: #ffdfb6;
+        --color-prettylights-syntax-markup-changed-bg: #5a1e02;
+        --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+        --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+        --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+        --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+        --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+        --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+        --color-codemirror-text: #c9d1d9;
+        --color-codemirror-bg: #0d1117;
+        --color-codemirror-gutters-bg: #0d1117;
+        --color-codemirror-guttermarker-text: #0d1117;
+        --color-codemirror-guttermarker-subtle-text: #6e7681;
+        --color-codemirror-linenumber-text: #8b949e;
+        --color-codemirror-cursor: #c9d1d9;
+        --color-codemirror-selection-bg: rgba(56,139,253,0.4);
+        --color-codemirror-activeline-bg: rgba(110,118,129,0.1);
+        --color-codemirror-matchingbracket-text: #c9d1d9;
+        --color-codemirror-lines-bg: #0d1117;
+        --color-codemirror-syntax-comment: #8b949e;
+        --color-codemirror-syntax-constant: #79c0ff;
+        --color-codemirror-syntax-entity: #d2a8ff;
+        --color-codemirror-syntax-keyword: #ff7b72;
+        --color-codemirror-syntax-storage: #ff7b72;
+        --color-codemirror-syntax-string: #a5d6ff;
+        --color-codemirror-syntax-support: #79c0ff;
+        --color-codemirror-syntax-variable: #ffa657;
+        --color-checks-bg: #010409;
+        --color-checks-run-border-width: 1px;
+        --color-checks-container-border-width: 1px;
+        --color-checks-text-primary: #c9d1d9;
+        --color-checks-text-secondary: #8b949e;
+        --color-checks-text-link: #58a6ff;
+        --color-checks-btn-icon: #8b949e;
+        --color-checks-btn-hover-icon: #c9d1d9;
+        --color-checks-btn-hover-bg: rgba(110,118,129,0.1);
+        --color-checks-input-text: #8b949e;
+        --color-checks-input-placeholder-text: #6e7681;
+        --color-checks-input-focus-text: #c9d1d9;
+        --color-checks-input-bg: #161b22;
+        --color-checks-input-shadow: 0 0 0 1px (obj) => get_1.default(obj, path);
+        --color-checks-donut-error: #f85149;
+        --color-checks-donut-pending: #d29922;
+        --color-checks-donut-success: #2ea043;
+        --color-checks-donut-neutral: #8b949e;
+        --color-checks-dropdown-text: #c9d1d9;
+        --color-checks-dropdown-bg: #161b22;
+        --color-checks-dropdown-border: #30363d;
+        --color-checks-dropdown-shadow: rgba(1,4,9,0.3);
+        --color-checks-dropdown-hover-text: #c9d1d9;
+        --color-checks-dropdown-hover-bg: rgba(110,118,129,0.1);
+        --color-checks-dropdown-btn-hover-text: #c9d1d9;
+        --color-checks-dropdown-btn-hover-bg: rgba(110,118,129,0.1);
+        --color-checks-scrollbar-thumb-bg: rgba(110,118,129,0.4);
+        --color-checks-header-label-text: #8b949e;
+        --color-checks-header-label-open-text: #c9d1d9;
+        --color-checks-header-border: #21262d;
+        --color-checks-header-icon: #8b949e;
+        --color-checks-line-text: #8b949e;
+        --color-checks-line-num-text: #6e7681;
+        --color-checks-line-timestamp-text: #6e7681;
+        --color-checks-line-hover-bg: rgba(110,118,129,0.1);
+        --color-checks-line-selected-bg: rgba(56,139,253,0.15);
+        --color-checks-line-selected-num-text: #58a6ff;
+        --color-checks-line-dt-fm-text: #ffffff;
+        --color-checks-line-dt-fm-bg: #9e6a03;
+        --color-checks-gate-bg: rgba(187,128,9,0.15);
+        --color-checks-gate-text: #8b949e;
+        --color-checks-gate-waiting-text: #d29922;
+        --color-checks-step-header-open-bg: #161b22;
+        --color-checks-step-error-text: #f85149;
+        --color-checks-step-warning-text: #d29922;
+        --color-checks-logline-text: #8b949e;
+        --color-checks-logline-num-text: #6e7681;
+        --color-checks-logline-debug-text: #a371f7;
+        --color-checks-logline-error-text: #8b949e;
+        --color-checks-logline-error-num-text: #6e7681;
+        --color-checks-logline-error-bg: rgba(248,81,73,0.15);
+        --color-checks-logline-warning-text: #8b949e;
+        --color-checks-logline-warning-num-text: #d29922;
+        --color-checks-logline-warning-bg: rgba(187,128,9,0.15);
+        --color-checks-logline-command-text: #58a6ff;
+        --color-checks-logline-section-text: #3fb950;
+        --color-checks-ansi-black: #0d1117;
+        --color-checks-ansi-black-bright: #161b22;
+        --color-checks-ansi-white: #b1bac4;
+        --color-checks-ansi-white-bright: #b1bac4;
+        --color-checks-ansi-gray: #6e7681;
+        --color-checks-ansi-red: #ff7b72;
+        --color-checks-ansi-red-bright: #ffa198;
+        --color-checks-ansi-green: #3fb950;
+        --color-checks-ansi-green-bright: #56d364;
+        --color-checks-ansi-yellow: #d29922;
+        --color-checks-ansi-yellow-bright: #e3b341;
+        --color-checks-ansi-blue: #58a6ff;
+        --color-checks-ansi-blue-bright: #79c0ff;
+        --color-checks-ansi-magenta: #bc8cff;
+        --color-checks-ansi-magenta-bright: #d2a8ff;
+        --color-checks-ansi-cyan: #76e3ea;
+        --color-checks-ansi-cyan-bright: #b3f0ff;
+        --color-project-header-bg: #0d1117;
+        --color-project-sidebar-bg: #161b22;
+        --color-project-gradient-in: #161b22;
+        --color-project-gradient-out: rgba(22,27,34,0);
+        --color-mktg-btn-bg: #f6f8fa;
+        --color-mktg-btn-shadow-outline: rgb(255 255 255 / 25%) 0 0 0 1px inset;
+        --color-mktg-btn-shadow-focus: rgb(255 255 255 / 25%) 0 0 0 4px;
+        --color-mktg-btn-shadow-hover: 0 4px 7px rgba(0, 0, 0, 0.15), 0 100px 80px rgba(255, 255, 255, 0.02), 0 42px 33px rgba(255, 255, 255, 0.024), 0 22px 18px rgba(255, 255, 255, 0.028), 0 12px 10px rgba(255, 255, 255, 0.034), 0 7px 5px rgba(255, 255, 255, 0.04), 0 3px 2px rgba(255, 255, 255, 0.07);
+        --color-mktg-btn-shadow-hover-muted: rgb(255 255 255) 0 0 0 2px inset;
+        --color-avatar-bg: rgba(255,255,255,0.1);
+        --color-avatar-border: rgba(240,246,252,0.1);
+        --color-avatar-stack-fade: #30363d;
+        --color-avatar-stack-fade-more: #21262d;
+        --color-avatar-child-shadow: -2px -2px 0 #0d1117;
+        --color-topic-tag-border: rgba(0,0,0,0);
+        --color-counter-border: rgba(0,0,0,0);
+        --color-select-menu-backdrop-border: #484f58;
+        --color-select-menu-tap-highlight: rgba(48,54,61,0.5);
+        --color-select-menu-tap-focus-bg: #0c2d6b;
+        --color-overlay-shadow: 0 0 0 1px #30363d, 0 16px 32px rgba(1,4,9,0.85);
+        --color-header-text: rgba(255,255,255,0.7);
+        --color-header-bg: #161b22;
+        --color-header-divider: #8b949e;
+        --color-header-logo: #f0f6fc;
+        --color-header-search-bg: #0d1117;
+        --color-header-search-border: #30363d;
+        --color-sidenav-selected-bg: #21262d;
+        --color-menu-bg-active: #161b22;
+        --color-input-disabled-bg: rgba(110,118,129,0);
+        --color-timeline-badge-bg: #21262d;
+        --color-ansi-black: #484f58;
+        --color-ansi-black-bright: #6e7681;
+        --color-ansi-white: #b1bac4;
+        --color-ansi-white-bright: #ffffff;
+        --color-ansi-gray: #6e7681;
+        --color-ansi-red: #ff7b72;
+        --color-ansi-red-bright: #ffa198;
+        --color-ansi-green: #3fb950;
+        --color-ansi-green-bright: #56d364;
+        --color-ansi-yellow: #d29922;
+        --color-ansi-yellow-bright: #e3b341;
+        --color-ansi-blue: #58a6ff;
+        --color-ansi-blue-bright: #79c0ff;
+        --color-ansi-magenta: #bc8cff;
+        --color-ansi-magenta-bright: #d2a8ff;
+        --color-ansi-cyan: #39c5cf;
+        --color-ansi-cyan-bright: #56d4dd;
+        --color-btn-text: #c9d1d9;
+        --color-btn-bg: #21262d;
+        --color-btn-border: rgba(240,246,252,0.1);
+        --color-btn-shadow: 0 0 transparent;
+        --color-btn-inset-shadow: 0 0 transparent;
+        --color-btn-hover-bg: #30363d;
+        --color-btn-hover-border: #8b949e;
+        --color-btn-active-bg: hsla(212,12%,18%,1);
+        --color-btn-active-border: #6e7681;
+        --color-btn-selected-bg: #161b22;
+        --color-btn-focus-bg: #21262d;
+        --color-btn-focus-border: #8b949e;
+        --color-btn-focus-shadow: 0 0 0 3px rgba(139,148,158,0.3);
+        --color-btn-shadow-active: inset 0 0.15em 0.3em rgba(1,4,9,0.15);
+        --color-btn-shadow-input-focus: 0 0 0 0.2em rgba(31,111,235,0.3);
+        --color-btn-counter-bg: #30363d;
+        --color-btn-primary-text: #ffffff;
+        --color-btn-primary-bg: #238636;
+        --color-btn-primary-border: rgba(240,246,252,0.1);
+        --color-btn-primary-shadow: 0 0 transparent;
+        --color-btn-primary-inset-shadow: 0 0 transparent;
+        --color-btn-primary-hover-bg: #2ea043;
+        --color-btn-primary-hover-border: rgba(240,246,252,0.1);
+        --color-btn-primary-selected-bg: #238636;
+        --color-btn-primary-selected-shadow: 0 0 transparent;
+        --color-btn-primary-disabled-text: rgba(255,255,255,0.5);
+        --color-btn-primary-disabled-bg: rgba(35,134,54,0.6);
+        --color-btn-primary-disabled-border: rgba(240,246,252,0.1);
+        --color-btn-primary-focus-bg: #238636;
+        --color-btn-primary-focus-border: rgba(240,246,252,0.1);
+        --color-btn-primary-focus-shadow: 0 0 0 3px rgba(46,164,79,0.4);
+        --color-btn-primary-icon: #ffffff;
+        --color-btn-primary-counter-bg: rgba(255,255,255,0.2);
+        --color-btn-outline-text: #58a6ff;
+        --color-btn-outline-hover-text: #58a6ff;
+        --color-btn-outline-hover-bg: #30363d;
+        --color-btn-outline-hover-border: rgba(240,246,252,0.1);
+        --color-btn-outline-hover-shadow: 0 1px 0 rgba(1,4,9,0.1);
+        --color-btn-outline-hover-inset-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
+        --color-btn-outline-hover-counter-bg: rgba(255,255,255,0.2);
+        --color-btn-outline-selected-text: #ffffff;
+        --color-btn-outline-selected-bg: #0d419d;
+        --color-btn-outline-selected-border: rgba(240,246,252,0.1);
+        --color-btn-outline-selected-shadow: 0 0 transparent;
+        --color-btn-outline-disabled-text: rgba(88,166,255,0.5);
+        --color-btn-outline-disabled-bg: #0d1117;
+        --color-btn-outline-disabled-counter-bg: rgba(31,111,235,0.05);
+        --color-btn-outline-focus-border: rgba(240,246,252,0.1);
+        --color-btn-outline-focus-shadow: 0 0 0 3px rgba(17,88,199,0.4);
+        --color-btn-outline-counter-bg: rgba(31,111,235,0.1);
+        --color-btn-danger-text: #f85149;
+        --color-btn-danger-hover-text: #ffffff;
+        --color-btn-danger-hover-bg: #da3633;
+        --color-btn-danger-hover-border: #f85149;
+        --color-btn-danger-hover-shadow: 0 0 transparent;
+        --color-btn-danger-hover-inset-shadow: 0 0 transparent;
+        --color-btn-danger-hover-icon: #ffffff;
+        --color-btn-danger-hover-counter-bg: rgba(255,255,255,0.2);
+        --color-btn-danger-selected-text: #ffffff;
+        --color-btn-danger-selected-bg: #b62324;
+        --color-btn-danger-selected-border: #ff7b72;
+        --color-btn-danger-selected-shadow: 0 0 transparent;
+        --color-btn-danger-disabled-text: rgba(248,81,73,0.5);
+        --color-btn-danger-disabled-bg: #0d1117;
+        --color-btn-danger-disabled-counter-bg: rgba(218,54,51,0.05);
+        --color-btn-danger-focus-border: #f85149;
+        --color-btn-danger-focus-shadow: 0 0 0 3px rgba(248,81,73,0.4);
+        --color-btn-danger-counter-bg: rgba(218,54,51,0.1);
+        --color-btn-danger-icon: #f85149;
+        --color-underlinenav-icon: #6e7681;
+        --color-underlinenav-border-hover: rgba(110,118,129,0.4);
+        --color-action-list-item-inline-divider: rgba(48,54,61,0.48);
+        --color-action-list-item-default-hover-bg: rgba(177,186,196,0.12);
+        --color-action-list-item-default-hover-border: rgba(0,0,0,0);
+        --color-action-list-item-default-active-bg: rgba(177,186,196,0.2);
+        --color-action-list-item-default-active-border: rgba(0,0,0,0);
+        --color-action-list-item-default-selected-bg: rgba(177,186,196,0.08);
+        --color-action-list-item-danger-hover-bg: rgba(248,81,73,0.16);
+        --color-action-list-item-danger-active-bg: rgba(248,81,73,0.24);
+        --color-action-list-item-danger-hover-text: #ff7b72;
+        --color-switch-track-bg: #010409;
+        --color-switch-track-border: #6e7681;
+        --color-switch-track-checked-bg: rgba(31,111,235,0.35);
+        --color-switch-track-checked-hover-bg: rgba(31,111,235,0.5);
+        --color-switch-track-checked-active-bg: rgba(31,111,235,0.65);
+        --color-switch-track-checked-border: #58a6ff;
+        --color-switch-knob-checked-bg: #1f6feb;
+        --color-switch-knob-checked-disabled-bg: #484f58;
+        --color-segmented-control-bg: #161b22;
+        --color-segmented-control-button-hover-bg: #30363d;
+        --color-segmented-control-button-active-bg: #21262d;
+        --color-segmented-control-button-selected-border: #6e7681;
+        --color-fg-default: #c9d1d9;
+        --color-fg-muted: #8b949e;
+        --color-fg-subtle: #6e7681;
+        --color-fg-on-emphasis: #ffffff;
+        --color-canvas-default: #0d1117;
+        --color-canvas-overlay: #161b22;
+        --color-canvas-inset: #010409;
+        --color-canvas-subtle: #161b22;
+        --color-border-default: #30363d;
+        --color-border-muted: #21262d;
+        --color-border-subtle: rgba(240,246,252,0.1);
+        --color-shadow-small: 0 0 transparent;
+        --color-shadow-medium: 0 3px 6px #010409;
+        --color-shadow-large: 0 8px 24px #010409;
+        --color-shadow-extra-large: 0 12px 48px #010409;
+        --color-neutral-emphasis-plus: #6e7681;
+        --color-neutral-emphasis: #6e7681;
+        --color-neutral-muted: rgba(110,118,129,0.4);
+        --color-neutral-subtle: rgba(110,118,129,0.1);
+        --color-accent-fg: #58a6ff;
+        --color-accent-emphasis: #1f6feb;
+        --color-accent-muted: rgba(56,139,253,0.4);
+        --color-accent-subtle: rgba(56,139,253,0.15);
+        --color-success-fg: #3fb950;
+        --color-success-emphasis: #238636;
+        --color-success-muted: rgba(46,160,67,0.4);
+        --color-success-subtle: rgba(46,160,67,0.15);
+        --color-attention-fg: #d29922;
+        --color-attention-emphasis: #9e6a03;
+        --color-attention-muted: rgba(187,128,9,0.4);
+        --color-attention-subtle: rgba(187,128,9,0.15);
+        --color-severe-fg: #db6d28;
+        --color-severe-emphasis: #bd561d;
+        --color-severe-muted: rgba(219,109,40,0.4);
+        --color-severe-subtle: rgba(219,109,40,0.15);
+        --color-danger-fg: #f85149;
+        --color-danger-emphasis: #da3633;
+        --color-danger-muted: rgba(248,81,73,0.4);
+        --color-danger-subtle: rgba(248,81,73,0.15);
+        --color-open-fg: #3fb950;
+        --color-open-emphasis: #238636;
+        --color-open-muted: rgba(46,160,67,0.4);
+        --color-open-subtle: rgba(46,160,67,0.15);
+        --color-closed-fg: #f85149;
+        --color-closed-emphasis: #da3633;
+        --color-closed-muted: rgba(248,81,73,0.4);
+        --color-closed-subtle: rgba(248,81,73,0.15);
+        --color-done-fg: #a371f7;
+        --color-done-emphasis: #8957e5;
+        --color-done-muted: rgba(163,113,247,0.4);
+        --color-done-subtle: rgba(163,113,247,0.15);
+        --color-sponsors-fg: #db61a2;
+        --color-sponsors-emphasis: #bf4b8a;
+        --color-sponsors-muted: rgba(219,97,162,0.4);
+        --color-sponsors-subtle: rgba(219,97,162,0.15);
+        --color-primer-fg-disabled: #484f58;
+        --color-primer-canvas-backdrop: rgba(1,4,9,0.8);
+        --color-primer-canvas-sticky: rgba(13,17,23,0.95);
+        --color-primer-border-active: #f78166;
+        --color-primer-border-contrast: rgba(255,255,255,0.2);
+        --color-primer-shadow-highlight: 0 0 transparent;
+        --color-primer-shadow-inset: 0 0 transparent;
+        --color-primer-shadow-focus: 0 0 0 3px #0c2d6b;
+        --color-scale-black: #010409;
+        --color-scale-white: #ffffff;
+        --color-scale-gray-0: #f0f6fc;
+        --color-scale-gray-1: #c9d1d9;
+        --color-scale-gray-2: #b1bac4;
+        --color-scale-gray-3: #8b949e;
+        --color-scale-gray-4: #6e7681;
+        --color-scale-gray-5: #484f58;
+        --color-scale-gray-6: #30363d;
+        --color-scale-gray-7: #21262d;
+        --color-scale-gray-8: #161b22;
+        --color-scale-gray-9: #0d1117;
+        --color-scale-blue-0: #cae8ff;
+        --color-scale-blue-1: #a5d6ff;
+        --color-scale-blue-2: #79c0ff;
+        --color-scale-blue-3: #58a6ff;
+        --color-scale-blue-4: #388bfd;
+        --color-scale-blue-5: #1f6feb;
+        --color-scale-blue-6: #1158c7;
+        --color-scale-blue-7: #0d419d;
+        --color-scale-blue-8: #0c2d6b;
+        --color-scale-blue-9: #051d4d;
+        --color-scale-green-0: #aff5b4;
+        --color-scale-green-1: #7ee787;
+        --color-scale-green-2: #56d364;
+        --color-scale-green-3: #3fb950;
+        --color-scale-green-4: #2ea043;
+        --color-scale-green-5: #238636;
+        --color-scale-green-6: #196c2e;
+        --color-scale-green-7: #0f5323;
+        --color-scale-green-8: #033a16;
+        --color-scale-green-9: #04260f;
+        --color-scale-yellow-0: #f8e3a1;
+        --color-scale-yellow-1: #f2cc60;
+        --color-scale-yellow-2: #e3b341;
+        --color-scale-yellow-3: #d29922;
+        --color-scale-yellow-4: #bb8009;
+        --color-scale-yellow-5: #9e6a03;
+        --color-scale-yellow-6: #845306;
+        --color-scale-yellow-7: #693e00;
+        --color-scale-yellow-8: #4b2900;
+        --color-scale-yellow-9: #341a00;
+        --color-scale-orange-0: #ffdfb6;
+        --color-scale-orange-1: #ffc680;
+        --color-scale-orange-2: #ffa657;
+        --color-scale-orange-3: #f0883e;
+        --color-scale-orange-4: #db6d28;
+        --color-scale-orange-5: #bd561d;
+        --color-scale-orange-6: #9b4215;
+        --color-scale-orange-7: #762d0a;
+        --color-scale-orange-8: #5a1e02;
+        --color-scale-orange-9: #3d1300;
+        --color-scale-red-0: #ffdcd7;
+        --color-scale-red-1: #ffc1ba;
+        --color-scale-red-2: #ffa198;
+        --color-scale-red-3: #ff7b72;
+        --color-scale-red-4: #f85149;
+        --color-scale-red-5: #da3633;
+        --color-scale-red-6: #b62324;
+        --color-scale-red-7: #8e1519;
+        --color-scale-red-8: #67060c;
+        --color-scale-red-9: #490202;
+        --color-scale-purple-0: #eddeff;
+        --color-scale-purple-1: #e2c5ff;
+        --color-scale-purple-2: #d2a8ff;
+        --color-scale-purple-3: #bc8cff;
+        --color-scale-purple-4: #a371f7;
+        --color-scale-purple-5: #8957e5;
+        --color-scale-purple-6: #6e40c9;
+        --color-scale-purple-7: #553098;
+        --color-scale-purple-8: #3c1e70;
+        --color-scale-purple-9: #271052;
+        --color-scale-pink-0: #ffdaec;
+        --color-scale-pink-1: #ffbedd;
+        --color-scale-pink-2: #ff9bce;
+        --color-scale-pink-3: #f778ba;
+        --color-scale-pink-4: #db61a2;
+        --color-scale-pink-5: #bf4b8a;
+        --color-scale-pink-6: #9e3670;
+        --color-scale-pink-7: #7d2457;
+        --color-scale-pink-8: #5e103e;
+        --color-scale-pink-9: #42062a;
+        --color-scale-coral-0: #ffddd2;
+        --color-scale-coral-1: #ffc2b2;
+        --color-scale-coral-2: #ffa28b;
+        --color-scale-coral-3: #f78166;
+        --color-scale-coral-4: #ea6045;
+        --color-scale-coral-5: #cf462d;
+        --color-scale-coral-6: #ac3220;
+        --color-scale-coral-7: #872012;
+        --color-scale-coral-8: #640d04;
+        --color-scale-coral-9: #460701;
+        --primer-duration-fast: 80ms;
+        --primer-easing-easeInOut: cubic-bezier(0.65,0,0.35,1);
+        --primer-actionListContent-paddingBlock: 6px;
+        --Layout-pane-width: 220px;
+        --Layout-content-width: 100%;
+        --Layout-template-columns: 1fr  220px;
+        --Layout-template-areas: "content pane";
+        --Layout-column-gap: 16px;
+        --Layout-row-gap: 16px;
+        --Layout-outer-spacing-x: 0px;
+        --Layout-outer-spacing-y: 0px;
+        --Layout-inner-spacing-min: 0px;
+        --Layout-inner-spacing-max: 0px;
+        --color-social-reaction-bg-hover: #21262d;
+        --color-social-reaction-bg-reacted-hover: #0c2d6b;
+        --color-workflow-card-connector: #484f58;
+        --color-workflow-card-connector-bg: #484f58;
+        --color-workflow-card-connector-inactive: #30363d;
+        --color-workflow-card-connector-inactive-bg: #30363d;
+        --color-workflow-card-connector-highlight: #1f6feb;
+        --color-workflow-card-connector-highlight-bg: #1f6feb;
+        --color-workflow-card-bg: #21262d;
+        --color-workflow-card-inactive-bg: #010409;
+        --color-workflow-card-header-shadow: rgba(27, 31, 35, 0.04);
+        --color-workflow-card-progress-complete-bg: #1f6feb;
+        --color-workflow-card-progress-incomplete-bg: #30363d;
+        --color-discussions-state-answered-icon: #3fb950;
+        --color-bg-discussions-row-emoji-box: #30363d;
+        --color-notifications-button-text: #ffffff;
+        --color-notifications-button-hover-text: #ffffff;
+        --color-notifications-button-hover-bg: #388bfd;
+        --color-notifications-row-read-bg: #0d1117;
+        --color-notifications-row-bg: #161b22;
+        --color-icon-directory: #8b949e;
+        --color-checks-step-error-icon: #f85149;
+        --color-calendar-halloween-graph-day-L1-bg: #631c03;
+        --color-calendar-halloween-graph-day-L2-bg: #bd561d;
+        --color-calendar-halloween-graph-day-L3-bg: #fa7a18;
+        --color-calendar-halloween-graph-day-L4-bg: #fddf68;
+        --color-calendar-graph-day-bg: #161b22;
+        --color-calendar-graph-day-border: rgba(27, 31, 35, 0.06);
+        --color-calendar-graph-day-L1-bg: #0e4429;
+        --color-calendar-graph-day-L2-bg: #006d32;
+        --color-calendar-graph-day-L3-bg: #26a641;
+        --color-calendar-graph-day-L4-bg: #39d353;
+        --color-calendar-graph-day-L1-border: rgba(255, 255, 255, 0.05);
+        --color-calendar-graph-day-L2-border: rgba(255, 255, 255, 0.05);
+        --color-calendar-graph-day-L3-border: rgba(255, 255, 255, 0.05);
+        --color-calendar-graph-day-L4-border: rgba(255, 255, 255, 0.05);
+        --color-user-mention-fg: #f8e3a1;
+        --color-user-mention-bg: #4b2900;
+        --color-text-white: #ffffff;
+        --sub-nav-mktg-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 3px 2px rgba(0, 0, 0, 0.2), 0 7px 7px rgba(0, 0, 0, 0.15);
+        */
